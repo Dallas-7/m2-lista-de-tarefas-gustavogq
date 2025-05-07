@@ -1,0 +1,89 @@
+body {
+    background-color: #e2e2e2;
+    font-family: 'roboto', sans-serif;
+}
+
+.header__container{
+    background-color: #fdfeff;
+}
+
+.header__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 18px;
+    align-items: center;
+}
+
+.header__title{
+    color: #3b5bdb;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.header__input--search{
+    background-color: #ebebeb;
+    border-radius: 5px;
+    width: 400px;
+    height: 40px;
+    border: none;
+    padding-left: 15px;
+}
+
+.main__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+.form__container{
+    background-color: #fdfeff;
+    padding: 25px;
+    border-radius: 7px;
+    width: 500px;
+    margin: 0 auto;
+
+}
+
+.form__input-container{
+    display: flex;
+    gap: 20px;
+    padding: 15px 0;
+}
+
+#input_title{
+    background-color: #ebebeb;
+    border-radius: 5px;
+    width: 100%;
+    height: 35px;
+    border: none;
+    padding-left: 15px;
+}
+
+.form__input--priority{
+    background-color: #ebebeb;
+    border-radius: 5px;
+    width: 75%;
+    height: 35px;
+    border: none;
+    padding-left: 15px;
+}
+
+.form__button--add-task{
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    background-color: #3b5bdb;
+    color: #fdfeff;
+    margin-top: 10px;
+}
+
+.form__title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px; 
+}
