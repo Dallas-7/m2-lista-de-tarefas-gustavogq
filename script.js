@@ -17,12 +17,12 @@ function renderElements(tasks){
   listaTarefa.innerHTML = ""
 
   for (let i = 0; i < tasks.length; i++){
-    const itemLista = createTaskItem(tasks[i]);
+    const itemLista = createTaskItem(tasks[i], i);
     listaTarefa.appendChild(itemLista)
   }
 }
 
-function createTaskItem(tarefa) {
+function createTaskItem(tarefa, index) {
   const li = document.createElement("li")
   const div = document.createElement("div")
   const span = document.createElement("span")
@@ -48,6 +48,14 @@ function createTaskItem(tarefa) {
   div.appendChild(p);
   li.appendChild(div);
   li.appendChild(button);
+
+  li.setAttribute('data-index' , index)
+
+  button.addEventListener('click', function() {
+    const indexToRemove = parseInt(li.getAttribute('data-index'));
+    tasks.splice(indexToRemove, 1);
+    renderElements(tasks)
+  });
 
   return li;
 }
